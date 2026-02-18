@@ -13,7 +13,7 @@
   --white: #ffffff;
   --shadow-soft: 0 12px 28px rgba(31, 61, 51, 0.14);
   --radius: 12px;
-  --header-height: 74px;
+  --header-height: 112px;
 }
 
 * {
@@ -94,7 +94,7 @@ img {
 
 .brand-logo {
   display: block;
-  height: 48px;
+  height: 96px;
   width: auto;
 }
 
@@ -455,6 +455,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-height: 92px;
+  }
+
   .menu-toggle {
     display: inline-flex;
   }
@@ -499,7 +503,7 @@ img {
   }
 
   .brand-logo {
-    height: 40px;
+    height: 80px;
   }
 
   .hero-logo {
