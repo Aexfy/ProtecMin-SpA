@@ -90,6 +90,13 @@ img {
   align-items: center;
   text-decoration: none;
   flex-shrink: 0;
+  gap: 10px;
+}
+
+.brand-icon {
+  display: block;
+  height: 36px;
+  width: auto;
 }
 
 .brand-logo {
@@ -496,6 +503,10 @@ img {
 
   .hero {
     min-height: 86vh;
+  }
+
+  .brand-icon {
+    height: 30px;
   }
 
   .brand-logo {
