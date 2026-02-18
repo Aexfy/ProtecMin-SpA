@@ -133,21 +133,18 @@ function validateEmail(emailValue) {
 }
 
 function formatChileMobilePhone(value) {
-  let digits = value.replace(/\D/g, "");
+  let subscriber = value.replace(/\D/g, "");
 
-  // Si el usuario pega un numero con prefijo, se remueve para normalizar.
-  if (digits.startsWith("569")) {
-    digits = digits.slice(3);
-  } else {
-    if (digits.startsWith("56")) {
-      digits = digits.slice(2);
-    }
-    if (digits.startsWith("9")) {
-      digits = digits.slice(1);
-    }
+  // Normaliza entradas con o sin prefijo de pais.
+  if (subscriber.startsWith("56")) {
+    subscriber = subscriber.slice(2);
+  }
+  if (subscriber.startsWith("9")) {
+    subscriber = subscriber.slice(1);
   }
 
-  const subscriber = digits.slice(0, 8);
+  // Solo se permiten 8 digitos del abonado.
+  subscriber = subscriber.slice(0, 8);
   if (!subscriber) {
     return "";
   }
@@ -167,9 +164,21 @@ function isValidChileMobilePhone(value) {
 }
 
 if (phoneInput) {
-  phoneInput.addEventListener("input", () => {
+  const applyPhoneMask = () => {
     phoneInput.value = formatChileMobilePhone(phoneInput.value);
+  };
+
+  // Cubre escritura, pegado, autocomplete y cambios manuales.
+  ["input", "change", "blur", "keyup"].forEach((eventName) => {
+    phoneInput.addEventListener(eventName, applyPhoneMask);
   });
+
+  phoneInput.addEventListener("paste", () => {
+    setTimeout(applyPhoneMask, 0);
+  });
+
+  // Formatea valor inicial si el navegador autocompleta el campo.
+  setTimeout(applyPhoneMask, 0);
 }
 
 function validateForm() {
