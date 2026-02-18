@@ -135,11 +135,16 @@ function validateEmail(emailValue) {
 function formatChileMobilePhone(value) {
   let subscriber = value.replace(/\D/g, "");
 
-  // Normaliza entradas con o sin prefijo de pais.
+  // Normaliza entradas con prefijos comunes (+56, 56, 09 o 9XXXXXXXX).
   if (subscriber.startsWith("56")) {
     subscriber = subscriber.slice(2);
-  }
-  if (subscriber.startsWith("9")) {
+    if (subscriber.startsWith("9")) {
+      subscriber = subscriber.slice(1);
+    }
+  } else if (subscriber.startsWith("09")) {
+    subscriber = subscriber.slice(2);
+  } else if (subscriber.length === 9 && subscriber.startsWith("9")) {
+    // Caso tipico al pegar numero nacional: 9XXXXXXXX.
     subscriber = subscriber.slice(1);
   }
 
