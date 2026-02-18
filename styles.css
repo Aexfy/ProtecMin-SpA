@@ -28,7 +28,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--gray-700);
-  background: linear-gradient(180deg, #f7f8f8 0%, #ecefef 100%);
+  background: linear-gradient(180deg, #fcfdfd 0%, #f3f6f5 100%);
   line-height: 1.6;
 }
 
@@ -48,7 +48,7 @@ img {
 }
 
 .section-alt {
-  background: linear-gradient(180deg, #edf1ef 0%, #e1e7e4 100%);
+  background: linear-gradient(180deg, #f5f8f7 0%, #e9efec 100%);
 }
 
 .section-heading {
@@ -72,9 +72,9 @@ img {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  background: rgba(20, 37, 31, 0.94);
+  background: rgba(233, 239, 236, 0.93);
   backdrop-filter: blur(4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(31, 61, 51, 0.12);
 }
 
 .header-content {
@@ -112,7 +112,7 @@ img {
 }
 
 .main-nav a {
-  color: #d6dfdb;
+  color: #243932;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.94rem;
@@ -127,7 +127,7 @@ img {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background: var(--green-light);
+  background: var(--green-mid);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease;
@@ -142,9 +142,9 @@ img {
   display: none;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(31, 61, 51, 0.22);
   border-radius: 8px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.66);
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -155,7 +155,7 @@ img {
 .menu-toggle span {
   width: 20px;
   height: 2px;
-  background: var(--white);
+  background: var(--green-dark);
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
@@ -184,7 +184,7 @@ img {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, rgba(13, 26, 22, 0.84) 0%, rgba(25, 48, 40, 0.68) 50%, rgba(45, 84, 64, 0.48) 100%);
+  background: linear-gradient(105deg, rgba(20, 40, 33, 0.72) 0%, rgba(36, 70, 56, 0.52) 50%, rgba(65, 110, 87, 0.35) 100%);
 }
 
 .hero-content {
@@ -474,8 +474,8 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    background: rgba(17, 33, 28, 0.98);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(238, 244, 241, 0.97);
+    border: 1px solid rgba(31, 61, 51, 0.16);
     border-radius: 12px;
     padding: 14px;
     opacity: 0;
@@ -492,7 +492,7 @@ img {
 
   .main-nav a:hover,
   .main-nav a:focus-visible {
-    background: rgba(124, 171, 79, 0.16);
+    background: rgba(47, 107, 79, 0.12);
   }
 
   .main-nav.is-open {
