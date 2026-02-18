@@ -152,12 +152,12 @@ function validateForm() {
     setFieldError("correo", "Ingresa tu correo.");
     isValid = false;
   } else if (!validateEmail(correo)) {
-    setFieldError("correo", "Ingresa un correo valido.");
+    setFieldError("correo", "Ingresa un correo válido.");
     isValid = false;
   }
 
   if (!telefono) {
-    setFieldError("telefono", "Ingresa tu telefono.");
+    setFieldError("telefono", "Ingresa tu teléfono.");
     isValid = false;
   }
 
@@ -208,7 +208,7 @@ async function handleFormSubmit(event) {
     formStatus.textContent = "Solicitud enviada correctamente. Te contactaremos pronto.";
     formStatus.classList.add("success");
   } catch (error) {
-    formStatus.textContent = "Ocurrio un error al enviar. Intenta nuevamente.";
+    formStatus.textContent = "Ocurrió un error al enviar. Intenta nuevamente.";
     formStatus.classList.add("error");
   } finally {
     submitButton.disabled = false;
