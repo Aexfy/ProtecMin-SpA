@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Placeholder proyecto 3">
+  <rect width="800" height="500" fill="#e3eae7"/>
+  <rect x="120" y="245" width="560" height="175" fill="#50665b"/>
+  <polygon points="120,245 300,170 500,245" fill="#748b80"/>
+  <rect x="350" y="190" width="120" height="230" fill="#6a7f74"/>
+  <rect x="380" y="220" width="60" height="55" fill="#9bb28c"/>
+  <line x1="120" y1="330" x2="680" y2="330" stroke="#d6e3db" stroke-width="8"/>
+  <rect x="0" y="430" width="800" height="70" fill="#1f322a"/>
+  <text x="50%" y="468" text-anchor="middle" fill="#d7e4dc" font-size="34" font-family="Segoe UI, Arial, sans-serif">Proyecto 03 - Habilitacion Operativa</text>
+</svg>

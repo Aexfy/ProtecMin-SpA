@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OBRAS PROTECMIN SpA - Contratista en obras menores. Protegemos tu faena, cuidamos tu trabajo.">
+  <title>OBRAS PROTECMIN SpA | Contratista en obras menores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header fijo con navegacion principal -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio">OBRAS PROTECMIN SpA</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegacion principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero principal -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="hero-eyebrow">Contratista en obras menores</p>
+        <h1>Protegemos tu faena, cuidamos tu trabajo</h1>
+        <p>
+          Soluciones confiables para obras civiles menores, mantencion industrial e infraestructura operativa.
+          Ejecutamos cada proyecto con foco en seguridad, cumplimiento y continuidad de tu operacion.
+        </p>
+        <a href="#contacto" class="btn btn-primary">Solicitar Cotizacion</a>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Servicios</h2>
+          <p>Apoyo tecnico y operativo para mantener tu faena en marcha.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal">
+            <h3>Obras civiles menores</h3>
+            <p>Ejecucion de mejoras estructurales, reparaciones y acondicionamientos en terreno.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Mantencion industrial</h3>
+            <p>Programas preventivos y correctivos para infraestructura y componentes de apoyo.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Apoyo a faenas</h3>
+            <p>Cuadrillas capacitadas para reforzar operaciones con altos estandares de seguridad.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Infraestructura menor</h3>
+            <p>Montaje y habilitacion de soluciones funcionales para entornos industriales exigentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section section-alt" id="proyectos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Proyectos</h2>
+          <p>Experiencia comprobada en trabajos de alcance menor con alto impacto operativo.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img src="assets/project-1.svg" alt="Proyecto de mejoramiento de accesos industriales">
+            <div class="project-body">
+              <h3>Mejoramiento de accesos</h3>
+              <p>Reforzamiento de rutas internas y habilitacion de zonas de circulacion segura.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/project-2.svg" alt="Proyecto de mantencion de estructuras">
+            <div class="project-body">
+              <h3>Mantencion de estructuras</h3>
+              <p>Intervencion programada en areas criticas para extender vida util de instalaciones.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/project-3.svg" alt="Proyecto de habilitacion de infraestructura operativa">
+            <div class="project-body">
+              <h3>Habilitacion operativa</h3>
+              <p>Implementacion de soluciones de soporte para continuidad de procesos en faena.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="section" id="nosotros">
+      <div class="container about-layout">
+        <div class="section-heading reveal">
+          <h2>Nosotros</h2>
+          <p>
+            En OBRAS PROTECMIN SpA trabajamos con una metodologia clara: planificar, ejecutar y entregar
+            con estandar industrial. Cada servicio se orienta a la seguridad de las personas y la continuidad
+            de tu trabajo.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <h3>Seguridad</h3>
+            <p>Protocolos estrictos y cultura preventiva en cada frente de trabajo.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3>Cumplimiento</h3>
+            <p>Compromiso real con plazos, alcance tecnico y requerimientos del cliente.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3>Experiencia</h3>
+            <p>Equipo con trayectoria en obras menores y soporte a operaciones industriales.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3>Compromiso</h3>
+            <p>Relacion directa, comunicacion transparente y foco en resultados confiables.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section section-alt" id="contacto">
+      <div class="container contact-layout">
+        <div class="section-heading reveal">
+          <h2>Contacto</h2>
+          <p>Envianos tu requerimiento y te responderemos a la brevedad.</p>
+        </div>
+
+        <!-- Reemplazar data-endpoint con tu endpoint real de Formspree -->
+        <form id="contactForm" class="contact-form reveal" data-endpoint="https://formspree.io/f/REEMPLAZAR_ENDPOINT" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <small class="field-error" data-error-for="nombre"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+            <small class="field-error" data-error-for="correo"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <small class="field-error" data-error-for="telefono"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <small class="field-error" data-error-for="mensaje"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>OBRAS PROTECMIN SpA</p>
+      <p>Contratista en obras menores</p>
+      <p>&copy; <span id="currentYear"></span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

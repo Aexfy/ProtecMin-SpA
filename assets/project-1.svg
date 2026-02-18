@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Placeholder proyecto 1">
+  <rect width="800" height="500" fill="#e5ece8"/>
+  <rect x="70" y="285" width="660" height="145" fill="#456555"/>
+  <rect x="130" y="210" width="160" height="75" fill="#6f8279"/>
+  <rect x="320" y="180" width="180" height="105" fill="#60746a"/>
+  <rect x="530" y="225" width="140" height="60" fill="#6f8279"/>
+  <rect x="0" y="430" width="800" height="70" fill="#2b3d35"/>
+  <text x="50%" y="468" text-anchor="middle" fill="#d7e4dc" font-size="34" font-family="Segoe UI, Arial, sans-serif">Proyecto 01 - Accesos Industriales</text>
+</svg>

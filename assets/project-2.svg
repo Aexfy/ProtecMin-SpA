@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Placeholder proyecto 2">
+  <rect width="800" height="500" fill="#e9efec"/>
+  <rect x="90" y="260" width="620" height="160" fill="#5a6f64"/>
+  <rect x="110" y="220" width="70" height="40" fill="#7cab4f"/>
+  <rect x="220" y="190" width="90" height="70" fill="#7d9187"/>
+  <rect x="350" y="170" width="95" height="90" fill="#6a7f74"/>
+  <rect x="485" y="205" width="95" height="55" fill="#7d9187"/>
+  <rect x="620" y="180" width="70" height="80" fill="#6a7f74"/>
+  <line x1="90" y1="260" x2="710" y2="260" stroke="#d7e4dc" stroke-width="7"/>
+  <rect x="0" y="430" width="800" height="70" fill="#23362e"/>
+  <text x="50%" y="468" text-anchor="middle" fill="#d7e4dc" font-size="34" font-family="Segoe UI, Arial, sans-serif">Proyecto 02 - Mantencion Estructural</text>
+</svg>

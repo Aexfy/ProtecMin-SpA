@@ -1,0 +1,34 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Escena industrial en faena">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f978e"/>
+      <stop offset="100%" stop-color="#394842"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3a4642"/>
+      <stop offset="100%" stop-color="#1f2925"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect y="520" width="1600" height="380" fill="url(#ground)"/>
+
+  <rect x="100" y="430" width="230" height="150" fill="#5f7168"/>
+  <rect x="340" y="410" width="280" height="170" fill="#4f6159"/>
+  <rect x="640" y="380" width="350" height="200" fill="#465650"/>
+  <rect x="1005" y="420" width="300" height="160" fill="#4f6058"/>
+
+  <rect x="1220" y="250" width="18" height="270" fill="#9fb7aa"/>
+  <rect x="1190" y="300" width="170" height="14" fill="#b7d1c3"/>
+  <polygon points="1360,307 1480,360 1360,366" fill="#cfe0d7"/>
+
+  <rect x="360" y="270" width="16" height="250" fill="#95ab9f"/>
+  <rect x="340" y="310" width="120" height="12" fill="#adc4b8"/>
+  <polygon points="460,316 560,365 460,372" fill="#c8d9d0"/>
+
+  <polygon points="0,580 320,520 540,580" fill="#7cab4f" opacity="0.58"/>
+  <polygon points="480,580 820,500 1120,580" fill="#7cab4f" opacity="0.45"/>
+  <polygon points="1020,580 1320,525 1600,580" fill="#7cab4f" opacity="0.52"/>
+
+  <rect x="0" y="560" width="1600" height="5" fill="#b9c9c0" opacity="0.55"/>
+</svg>
