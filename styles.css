@@ -87,25 +87,15 @@ img {
 
 .brand {
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1.1;
-  color: var(--white);
+  align-items: center;
   text-decoration: none;
-  gap: 2px;
+  flex-shrink: 0;
 }
 
-.brand-main {
-  font-weight: 800;
-  font-size: 1.08rem;
-  letter-spacing: 0.55px;
-}
-
-.brand-obras {
-  font-size: 0.66rem;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  color: #b6c4be;
+.brand-logo {
+  display: block;
+  height: 48px;
+  width: auto;
 }
 
 .main-nav {
@@ -506,6 +496,10 @@ img {
 
   .hero {
     min-height: 86vh;
+  }
+
+  .brand-logo {
+    height: 40px;
   }
 
   .hero-logo {
