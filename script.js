@@ -9,6 +9,7 @@ const navLinks = document.querySelectorAll("a[href^='#']");
 const form = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 const yearEl = document.getElementById("currentYear");
+const phoneInput = form?.elements?.telefono;
 
 // Ano dinamico en footer.
 yearEl.textContent = new Date().getFullYear();
@@ -131,6 +132,46 @@ function validateEmail(emailValue) {
   return emailPattern.test(emailValue);
 }
 
+function formatChileMobilePhone(value) {
+  let digits = value.replace(/\D/g, "");
+
+  // Si el usuario pega un numero con prefijo, se remueve para normalizar.
+  if (digits.startsWith("569")) {
+    digits = digits.slice(3);
+  } else {
+    if (digits.startsWith("56")) {
+      digits = digits.slice(2);
+    }
+    if (digits.startsWith("9")) {
+      digits = digits.slice(1);
+    }
+  }
+
+  const subscriber = digits.slice(0, 8);
+  if (!subscriber) {
+    return "";
+  }
+
+  const firstBlock = subscriber.slice(0, 4);
+  const secondBlock = subscriber.slice(4);
+
+  if (!secondBlock) {
+    return `+56 9 ${firstBlock}`;
+  }
+
+  return `+56 9 ${firstBlock} ${secondBlock}`;
+}
+
+function isValidChileMobilePhone(value) {
+  return /^\+56 9 \d{4} \d{4}$/.test(value.trim());
+}
+
+if (phoneInput) {
+  phoneInput.addEventListener("input", () => {
+    phoneInput.value = formatChileMobilePhone(phoneInput.value);
+  });
+}
+
 function validateForm() {
   let isValid = true;
 
@@ -158,6 +199,9 @@ function validateForm() {
 
   if (!telefono) {
     setFieldError("telefono", "Ingresa tu teléfono.");
+    isValid = false;
+  } else if (!isValidChileMobilePhone(telefono)) {
+    setFieldError("telefono", "Usa el formato +56 9 xxxx xxxx.");
     isValid = false;
   }
 
