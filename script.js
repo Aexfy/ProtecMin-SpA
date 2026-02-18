@@ -1,6 +1,6 @@
 ﻿// Endpoint configurable de Formspree.
-// Reemplaza REEMPLAZAR_ENDPOINT por tu codigo real (ej: https://formspree.io/f/abcdwxyz).
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/REEMPLAZAR_ENDPOINT";
+// Endpoint activo de Formspree para el formulario de contacto.
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzdavjao";
 
 const header = document.querySelector(".site-header");
 const menuToggle = document.getElementById("menuToggle");
