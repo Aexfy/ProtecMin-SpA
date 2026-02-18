@@ -1,5 +1,5 @@
 ﻿/*
-  Estilos principales del sitio corporativo OBRAS PROTECMIN SpA.
+  Estilos principales del sitio corporativo PROTECMIN SpA.
   Paleta sobria: verdes industriales y escala de grises.
 */
 :root {
@@ -86,11 +86,26 @@ img {
 }
 
 .brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
   color: var(--white);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.4px;
+  gap: 2px;
+}
+
+.brand-main {
+  font-weight: 800;
+  font-size: 1.08rem;
+  letter-spacing: 0.55px;
+}
+
+.brand-obras {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #b6c4be;
 }
 
 .main-nav {
@@ -189,6 +204,23 @@ img {
   font-weight: 700;
   font-size: 0.8rem;
   color: #d2dfd8;
+}
+
+.hero-logo-space {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 18px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(211, 225, 217, 0.85);
+  box-shadow: 0 10px 28px rgba(9, 19, 16, 0.34);
+}
+
+.hero-logo {
+  width: min(320px, 72vw);
+  height: auto;
 }
 
 .hero h1 {
@@ -476,6 +508,10 @@ img {
     min-height: 86vh;
   }
 
+  .hero-logo {
+    width: min(270px, 76vw);
+  }
+
   .section {
     padding: 70px 0;
   }
@@ -503,3 +539,4 @@ img {
     transform: none;
   }
 }
+
