@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 lastName: "Arriagada",
                 company: "ProtecMin",
                 title: "Socio Director",       // Puedes actualizar el cargo si lo deseas
-                phone: "+56900000000",         // Reemplaza con tu número real
-                email: "correo@protecmin.cl",  // Reemplaza con tu correo real
-                website: "www.protecmin.cl"
+                phone: "+56996363153",         // Reemplaza con tu número real
+                email: "parriagada@protecminspa.cl",  // Reemplaza con tu correo real
+                website: "www.protecminspa.cl"
             };
 
             // 2. Estructura del archivo VCF (VCard)
